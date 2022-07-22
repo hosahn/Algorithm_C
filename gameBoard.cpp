@@ -24,8 +24,7 @@ bool set(vector<vector<int>> &board, int x, int y, int i, int j){
 
 int solution(vector<vector<int>> &board, int width, int height){
     int minX = -1;
-    int minY = -1;
-
+    int minY;
     for(int i =0; i < height; i++){
         for (int j =0; j< width; j++){
             if (board[i][j] == 0){
@@ -36,9 +35,7 @@ int solution(vector<vector<int>> &board, int width, int height){
         }
         if(minX != -1) break;
     }
-    if (minX == -1) {
-        return 1;
-    }
+    if (minX == -1) return 1;
     int result = 0;
     for (int z =0; z < 4; z++) {
         if(set(board, minX, minY, z, 1)){
