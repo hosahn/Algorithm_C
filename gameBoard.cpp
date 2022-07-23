@@ -16,11 +16,17 @@ bool set(vector<vector<int>> &board, int x, int y, int i, int j){
         const int ny = y + coverType[i][k][1];
         if(nx < 0 || nx >= board.size() || ny < 0 || ny >= board[0].size())
             ok = false;
-        else if ((board[nx][ny] += j) > 1)
-            ok = false;
+        else {
+            board[nx][ny] += j;
+            if(board[nx][ny] > 1) ok = false;
+        }
     }
     return ok;
 }
+
+//set에 단순히 board[nx][ny] = true를 대입할 수 없는 이유 :
+//나중에 방문 해제처리 할 때(다시 false로 되돌릴 때) 원래 true였던 애까지 false로 바꿔버린다 => 무한루프에 빠진다.
+//따라서 1, -1을 대입해서 (일단 한 번 방문한 칸들은 결국 무조건 방문 해제처리하는 백트래킹 로직이니) 더했다 뻈다 해주면 된다.
 
 int solution(vector<vector<int>> &board, int width, int height){
     int minX = -1;
