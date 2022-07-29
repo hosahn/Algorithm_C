@@ -45,6 +45,7 @@ int solution(vector<int>& clocks, int Switch){
         int tmp = solution(clocks, Switch + 1);
         if (tmp < INF) {
             result = min(result, i + tmp);
+            //min 함수 호출은 생각보다 느리다. 따라서 tmp가 의미있는 값일때만 사용해주면 속도가 꽤 상승한다.
         }
         rotate(Switch, clocks);
     }
