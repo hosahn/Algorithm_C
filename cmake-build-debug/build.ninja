@@ -172,6 +172,39 @@ build gameBoard.exe: CXX_EXECUTABLE_LINKER__gameBoard_Debug CMakeFiles/gameBoard
   TARGET_IMPLIB = libgameBoard.dll.a
   TARGET_PDB = gameBoard.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target clockSync
+
+
+#############################################
+# Order-only phony target for clockSync
+
+build cmake_object_order_depends_target_clockSync: phony || CMakeFiles/clockSync.dir
+
+build CMakeFiles/clockSync.dir/clockSync.cpp.obj: CXX_COMPILER__clockSync_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/clockSync.cpp || cmake_object_order_depends_target_clockSync
+  DEP_FILE = CMakeFiles\clockSync.dir\clockSync.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\clockSync.dir
+  OBJECT_FILE_DIR = CMakeFiles\clockSync.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target clockSync
+
+
+#############################################
+# Link the executable clockSync.exe
+
+build clockSync.exe: CXX_EXECUTABLE_LINKER__clockSync_Debug CMakeFiles/clockSync.dir/clockSync.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\clockSync.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = clockSync.exe
+  TARGET_IMPLIB = libclockSync.dll.a
+  TARGET_PDB = clockSync.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -202,6 +235,8 @@ build Picnic: phony Picnic.exe
 
 build boggleGame: phony boggleGame.exe
 
+build clockSync: phony clockSync.exe
+
 build gameBoard: phony gameBoard.exe
 
 build main: phony main.exe
@@ -214,7 +249,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe
 
 # =============================================================================
 # Built-in targets
