@@ -205,6 +205,39 @@ build clockSync.exe: CXX_EXECUTABLE_LINKER__clockSync_Debug CMakeFiles/clockSync
   TARGET_IMPLIB = libclockSync.dll.a
   TARGET_PDB = clockSync.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Reverse_Quad
+
+
+#############################################
+# Order-only phony target for Reverse_Quad
+
+build cmake_object_order_depends_target_Reverse_Quad: phony || CMakeFiles/Reverse_Quad.dir
+
+build CMakeFiles/Reverse_Quad.dir/Reverse_Quad.cpp.obj: CXX_COMPILER__Reverse_Quad_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/Reverse_Quad.cpp || cmake_object_order_depends_target_Reverse_Quad
+  DEP_FILE = CMakeFiles\Reverse_Quad.dir\Reverse_Quad.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Reverse_Quad.dir
+  OBJECT_FILE_DIR = CMakeFiles\Reverse_Quad.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Reverse_Quad
+
+
+#############################################
+# Link the executable Reverse_Quad.exe
+
+build Reverse_Quad.exe: CXX_EXECUTABLE_LINKER__Reverse_Quad_Debug CMakeFiles/Reverse_Quad.dir/Reverse_Quad.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Reverse_Quad.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Reverse_Quad.exe
+  TARGET_IMPLIB = libReverse_Quad.dll.a
+  TARGET_PDB = Reverse_Quad.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -233,6 +266,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Picnic: phony Picnic.exe
 
+build Reverse_Quad: phony Reverse_Quad.exe
+
 build boggleGame: phony boggleGame.exe
 
 build clockSync: phony clockSync.exe
@@ -249,7 +284,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe
 
 # =============================================================================
 # Built-in targets
