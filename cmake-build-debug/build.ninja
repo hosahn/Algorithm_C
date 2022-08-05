@@ -238,6 +238,39 @@ build Reverse_Quad.exe: CXX_EXECUTABLE_LINKER__Reverse_Quad_Debug CMakeFiles/Rev
   TARGET_IMPLIB = libReverse_Quad.dll.a
   TARGET_PDB = Reverse_Quad.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Fence
+
+
+#############################################
+# Order-only phony target for Fence
+
+build cmake_object_order_depends_target_Fence: phony || CMakeFiles/Fence.dir
+
+build CMakeFiles/Fence.dir/Fence.cpp.obj: CXX_COMPILER__Fence_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/Fence.cpp || cmake_object_order_depends_target_Fence
+  DEP_FILE = CMakeFiles\Fence.dir\Fence.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Fence.dir
+  OBJECT_FILE_DIR = CMakeFiles\Fence.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Fence
+
+
+#############################################
+# Link the executable Fence.exe
+
+build Fence.exe: CXX_EXECUTABLE_LINKER__Fence_Debug CMakeFiles/Fence.dir/Fence.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Fence.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Fence.exe
+  TARGET_IMPLIB = libFence.dll.a
+  TARGET_PDB = Fence.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -264,6 +297,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Fence: phony Fence.exe
+
 build Picnic: phony Picnic.exe
 
 build Reverse_Quad: phony Reverse_Quad.exe
@@ -284,7 +319,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe
 
 # =============================================================================
 # Built-in targets

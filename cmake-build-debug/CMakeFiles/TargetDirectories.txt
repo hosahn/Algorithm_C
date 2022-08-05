@@ -4,5 +4,6 @@ C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Picnic.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/gameBoard.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/clockSync.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Reverse_Quad.dir
+C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Fence.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -48,6 +48,7 @@ int solution(vector<vector<int>> &board, int width, int height){
             result += solution(board, width, height);
         }
         set(board, minX, minY, z, -1);
+        //방문해제처리는 이처럼 문제에 맞게 다양한 방식으로 사용해야한다.
     }
     return result;
 }
