@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "untitled",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Fence::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Fence-Debug-b97583e54599226584ba.json",
+					"name" : "Fence",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "JumpGame::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-JumpGame-Debug-d915a38360ed3c0508c9.json",
+					"name" : "JumpGame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Picnic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Picnic-Debug-ca7a1a3caba6b9a481f7.json",
+					"name" : "Picnic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Reverse_Quad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Reverse_Quad-Debug-c92f9e9839437d551e28.json",
+					"name" : "Reverse_Quad",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "binomial::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-binomial-Debug-52bac0b5ad67857de8dd.json",
+					"name" : "binomial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boggleGame::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boggleGame-Debug-5cc616a0aa249cabd40a.json",
+					"name" : "boggleGame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clockSync::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clockSync-Debug-88acc4f7a80e9c0d6ce8.json",
+					"name" : "clockSync",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gameBoard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gameBoard-Debug-0e6a2bb9b34e8da69e1b.json",
+					"name" : "gameBoard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-121b5cb3636252c3694d.json",
+					"name" : "main",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug",
+		"source" : "C:/Users/hosah/CLionProjects/Algorithm_C"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
