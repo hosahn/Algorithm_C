@@ -271,6 +271,72 @@ build Fence.exe: CXX_EXECUTABLE_LINKER__Fence_Debug CMakeFiles/Fence.dir/Fence.c
   TARGET_IMPLIB = libFence.dll.a
   TARGET_PDB = Fence.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target binomial
+
+
+#############################################
+# Order-only phony target for binomial
+
+build cmake_object_order_depends_target_binomial: phony || CMakeFiles/binomial.dir
+
+build CMakeFiles/binomial.dir/binomial.cpp.obj: CXX_COMPILER__binomial_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/binomial.cpp || cmake_object_order_depends_target_binomial
+  DEP_FILE = CMakeFiles\binomial.dir\binomial.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\binomial.dir
+  OBJECT_FILE_DIR = CMakeFiles\binomial.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target binomial
+
+
+#############################################
+# Link the executable binomial.exe
+
+build binomial.exe: CXX_EXECUTABLE_LINKER__binomial_Debug CMakeFiles/binomial.dir/binomial.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\binomial.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = binomial.exe
+  TARGET_IMPLIB = libbinomial.dll.a
+  TARGET_PDB = binomial.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target JumpGame
+
+
+#############################################
+# Order-only phony target for JumpGame
+
+build cmake_object_order_depends_target_JumpGame: phony || CMakeFiles/JumpGame.dir
+
+build CMakeFiles/JumpGame.dir/JumpGame.cpp.obj: CXX_COMPILER__JumpGame_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/JumpGame.cpp || cmake_object_order_depends_target_JumpGame
+  DEP_FILE = CMakeFiles\JumpGame.dir\JumpGame.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\JumpGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\JumpGame.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target JumpGame
+
+
+#############################################
+# Link the executable JumpGame.exe
+
+build JumpGame.exe: CXX_EXECUTABLE_LINKER__JumpGame_Debug CMakeFiles/JumpGame.dir/JumpGame.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\JumpGame.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = JumpGame.exe
+  TARGET_IMPLIB = libJumpGame.dll.a
+  TARGET_PDB = JumpGame.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -299,9 +365,13 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Fence: phony Fence.exe
 
+build JumpGame: phony JumpGame.exe
+
 build Picnic: phony Picnic.exe
 
 build Reverse_Quad: phony Reverse_Quad.exe
+
+build binomial: phony binomial.exe
 
 build boggleGame: phony boggleGame.exe
 
@@ -319,7 +389,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe
 
 # =============================================================================
 # Built-in targets
