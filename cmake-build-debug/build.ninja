@@ -337,6 +337,105 @@ build JumpGame.exe: CXX_EXECUTABLE_LINKER__JumpGame_Debug CMakeFiles/JumpGame.di
   TARGET_IMPLIB = libJumpGame.dll.a
   TARGET_PDB = JumpGame.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target WildCard
+
+
+#############################################
+# Order-only phony target for WildCard
+
+build cmake_object_order_depends_target_WildCard: phony || CMakeFiles/WildCard.dir
+
+build CMakeFiles/WildCard.dir/WildCard.cpp.obj: CXX_COMPILER__WildCard_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/WildCard.cpp || cmake_object_order_depends_target_WildCard
+  DEP_FILE = CMakeFiles\WildCard.dir\WildCard.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\WildCard.dir
+  OBJECT_FILE_DIR = CMakeFiles\WildCard.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target WildCard
+
+
+#############################################
+# Link the executable WildCard.exe
+
+build WildCard.exe: CXX_EXECUTABLE_LINKER__WildCard_Debug CMakeFiles/WildCard.dir/WildCard.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\WildCard.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = WildCard.exe
+  TARGET_IMPLIB = libWildCard.dll.a
+  TARGET_PDB = WildCard.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LIS
+
+
+#############################################
+# Order-only phony target for LIS
+
+build cmake_object_order_depends_target_LIS: phony || CMakeFiles/LIS.dir
+
+build CMakeFiles/LIS.dir/LIS.cpp.obj: CXX_COMPILER__LIS_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/LIS.cpp || cmake_object_order_depends_target_LIS
+  DEP_FILE = CMakeFiles\LIS.dir\LIS.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\LIS.dir
+  OBJECT_FILE_DIR = CMakeFiles\LIS.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LIS
+
+
+#############################################
+# Link the executable LIS.exe
+
+build LIS.exe: CXX_EXECUTABLE_LINKER__LIS_Debug CMakeFiles/LIS.dir/LIS.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LIS.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LIS.exe
+  TARGET_IMPLIB = libLIS.dll.a
+  TARGET_PDB = LIS.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LISFAST.cpp
+
+
+#############################################
+# Order-only phony target for LISFAST.cpp
+
+build cmake_object_order_depends_target_LISFAST.cpp: phony || CMakeFiles/LISFAST.cpp.dir
+
+build CMakeFiles/LISFAST.cpp.dir/LISFAST.cpp.obj: CXX_COMPILER__LISFAST.2ecpp_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/LISFAST.cpp || cmake_object_order_depends_target_LISFAST.cpp
+  DEP_FILE = CMakeFiles\LISFAST.cpp.dir\LISFAST.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\LISFAST.cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\LISFAST.cpp.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LISFAST.cpp
+
+
+#############################################
+# Link the executable LISFAST.cpp.exe
+
+build LISFAST.cpp.exe: CXX_EXECUTABLE_LINKER__LISFAST.2ecpp_Debug CMakeFiles/LISFAST.cpp.dir/LISFAST.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LISFAST.cpp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LISFAST.cpp.exe
+  TARGET_IMPLIB = libLISFAST.cpp.dll.a
+  TARGET_PDB = LISFAST.cpp.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -367,9 +466,15 @@ build Fence: phony Fence.exe
 
 build JumpGame: phony JumpGame.exe
 
+build LIS: phony LIS.exe
+
+build LISFAST.cpp: phony LISFAST.cpp.exe
+
 build Picnic: phony Picnic.exe
 
 build Reverse_Quad: phony Reverse_Quad.exe
+
+build WildCard: phony WildCard.exe
 
 build binomial: phony binomial.exe
 
@@ -389,7 +494,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe
 
 # =============================================================================
 # Built-in targets

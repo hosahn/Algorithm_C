@@ -7,5 +7,8 @@ C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Reverse_Qu
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Fence.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/binomial.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/JumpGame.dir
+C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/WildCard.dir
+C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/LIS.dir
+C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/LISFAST.cpp.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
