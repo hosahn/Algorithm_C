@@ -10,5 +10,7 @@ C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/JumpGame.d
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/WildCard.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/LIS.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/LISFAST.cpp.dir
+C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Triangle.dir
+C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/JLIS.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir

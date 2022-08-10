@@ -436,6 +436,72 @@ build LISFAST.cpp.exe: CXX_EXECUTABLE_LINKER__LISFAST.2ecpp_Debug CMakeFiles/LIS
   TARGET_IMPLIB = libLISFAST.cpp.dll.a
   TARGET_PDB = LISFAST.cpp.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Triangle
+
+
+#############################################
+# Order-only phony target for Triangle
+
+build cmake_object_order_depends_target_Triangle: phony || CMakeFiles/Triangle.dir
+
+build CMakeFiles/Triangle.dir/Triangle.cpp.obj: CXX_COMPILER__Triangle_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/Triangle.cpp || cmake_object_order_depends_target_Triangle
+  DEP_FILE = CMakeFiles\Triangle.dir\Triangle.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Triangle.dir
+  OBJECT_FILE_DIR = CMakeFiles\Triangle.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Triangle
+
+
+#############################################
+# Link the executable Triangle.exe
+
+build Triangle.exe: CXX_EXECUTABLE_LINKER__Triangle_Debug CMakeFiles/Triangle.dir/Triangle.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Triangle.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Triangle.exe
+  TARGET_IMPLIB = libTriangle.dll.a
+  TARGET_PDB = Triangle.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target JLIS
+
+
+#############################################
+# Order-only phony target for JLIS
+
+build cmake_object_order_depends_target_JLIS: phony || CMakeFiles/JLIS.dir
+
+build CMakeFiles/JLIS.dir/JLIS.cpp.obj: CXX_COMPILER__JLIS_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/JLIS.cpp || cmake_object_order_depends_target_JLIS
+  DEP_FILE = CMakeFiles\JLIS.dir\JLIS.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\JLIS.dir
+  OBJECT_FILE_DIR = CMakeFiles\JLIS.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target JLIS
+
+
+#############################################
+# Link the executable JLIS.exe
+
+build JLIS.exe: CXX_EXECUTABLE_LINKER__JLIS_Debug CMakeFiles/JLIS.dir/JLIS.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\JLIS.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = JLIS.exe
+  TARGET_IMPLIB = libJLIS.dll.a
+  TARGET_PDB = JLIS.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -464,6 +530,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Fence: phony Fence.exe
 
+build JLIS: phony JLIS.exe
+
 build JumpGame: phony JumpGame.exe
 
 build LIS: phony LIS.exe
@@ -473,6 +541,8 @@ build LISFAST.cpp: phony LISFAST.cpp.exe
 build Picnic: phony Picnic.exe
 
 build Reverse_Quad: phony Reverse_Quad.exe
+
+build Triangle: phony Triangle.exe
 
 build WildCard: phony WildCard.exe
 
@@ -494,7 +564,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe
 
 # =============================================================================
 # Built-in targets

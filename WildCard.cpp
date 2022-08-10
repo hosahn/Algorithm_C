@@ -8,18 +8,20 @@ using namespace std;
 int cache[101][101];
 
 int solution(string target, string tmp, int a, int b, int tmpSize, int targetSize){
-    int& ret = cache[a][b]; //이거 활용 잘 하자..
+    int& ret = cache[a][b];
     if(ret != -1) return ret;
     //방문한 적이 있다면 바로 return
     while(a < targetSize && b < tmpSize && (target[a] == '?' || target[a] == tmp[b])) {
         ret = solution(target, tmp, a + 1, b + 1, tmpSize, targetSize);
         return ret;
     }
+    // ? 와일드카드인경우
 
     if(a == targetSize){
         ret = (b == tmpSize);
         return ret;
     }
+    // a끝에 도달한경우
 
     if(target[a] == '*'){
         if((b < tmpSize && solution(target, tmp, a, b+1, tmpSize, targetSize)) || (a < targetSize && (solution(target, tmp, a+1, b, tmpSize, targetSize)))){
@@ -33,8 +35,9 @@ int solution(string target, string tmp, int a, int b, int tmpSize, int targetSiz
 }
 
 int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(0);
+    ios_base :: sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
     int n;
     cin >> n;
     for(int i = 0; i < n; i++){

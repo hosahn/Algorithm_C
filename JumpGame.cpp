@@ -1,56 +1,50 @@
-#include <iostream>
 #include <vector>
+#include <iostream>
+#include <string.h>
 using namespace std;
 
-int solution(vector<vector<int>>& field, vector<vector<int>>& visited, int x, int y, int size){
-    if (x >= size || y >= size) {
-        return -1;
-    }
-    if ((x == size - 1) && (y == size - 1)) {
-        return 1;
-    }
-    if (visited[x][y] != 0) {
-        return visited[x][y];
-    }
+
+int cache[101][101];
+
+int solution(vector<vector<int>>& field, int size, int x, int y){
+    if(x >= size || y >= size)
+        return 0;
+    int& ret = cache[x][y];
+    if(field[x][y] == 0)
+        return ret = 1;
+
+    //이게
+    if(ret != -1)
+        return ret;
+    //메모이제이션 코드 (없어도 동작하지만 완전탐색이 되어버림)
+
     int jump = field[x][y];
-    int s1 = solution(field, visited, x + jump, y, size);
-    int s2 = solution(field, visited, x, y+ jump, size);
-    if (s1 == 1 || s2 == 1){
-        return visited[x][y] = 1;
-    }
-    else{
-        return visited[x][y] = -1;
-    }
+    return ret = solution(field, size, x + jump, y) || solution(field, size, x, y + jump);
 }
 
-int main() {
+int main(){
     ios_base :: sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
     int n;
     cin >> n;
     for(int i = 0; i < n; i++){
-        vector<vector<int>> field;
-        vector<vector<int>> visited;
+        vector<vector<int>>field;
         int size;
         cin >> size;
         for(int j = 0; j < size; j++){
-            vector<int> tmp(0);
-            vector<int> tmpVisited(size);
+            memset(cache, -1, sizeof(cache));
+            vector<int> temp;
             for(int k = 0; k < size; k++){
-                int z;
-                cin >> z;
-                tmp.push_back(z);
+                int tmp;
+                cin >> tmp;
+                temp.push_back(tmp);
             }
-            field.push_back(tmp);
-            visited.push_back(tmpVisited);
+            field.push_back(temp);
         }
-        int result = solution(field, visited, 0, 0, size);
-        if (result == 1){
+        if(solution(field, size, 0, 0) == 1)
             cout << "YES" << endl;
-        }
-        else{
+        else
             cout << "NO" << endl;
-        }
     }
 }

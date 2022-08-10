@@ -16,18 +16,24 @@ int solution(vector<int>& arr, int start){
 }
 
 int main(){
-    int n;
-    memset(cache, -1, sizeof(cache));
-    cin >> n;
-    vector<int> arr;
-    for(int i = 0; i < n; i++){
-        int tmp;
-        cin >> tmp;
-        arr.push_back(tmp);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    int k;
+    cin >> k;
+    for(int z = 0; z < k; z++) {
+        int n;
+        memset(cache, -1, sizeof(cache));
+        cin >> n;
+        vector<int> arr;
+        for (int i = 0; i < n; i++) {
+            int tmp;
+            cin >> tmp;
+            arr.push_back(tmp);
+        }
+        int maxLen = -1;
+        for (int i = 0; i < n; i++) {
+            maxLen = max(solution(arr, i), maxLen);
+        }
     }
-    int maxLen = -1;
-    for(int i = 0; i < n ; i++){
-        maxLen = max(solution(arr, i), maxLen);
-    }
-    cout << maxLen;
 }

@@ -11,6 +11,8 @@ long long solution(int n, int r){
     return dp[n][r] = (solution(n-1, r-1) + solution(n-1, r)) % 1000000007;
 }
 
+//이항 계수란?
+
 int main(){
     int n, r;
     cin >> n >> r;
