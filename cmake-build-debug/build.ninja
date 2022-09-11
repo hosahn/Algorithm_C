@@ -502,6 +502,39 @@ build JLIS.exe: CXX_EXECUTABLE_LINKER__JLIS_Debug CMakeFiles/JLIS.dir/JLIS.cpp.o
   TARGET_IMPLIB = libJLIS.dll.a
   TARGET_PDB = JLIS.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 1182
+
+
+#############################################
+# Order-only phony target for 1182
+
+build cmake_object_order_depends_target_1182: phony || CMakeFiles/1182.dir
+
+build CMakeFiles/1182.dir/1182.cpp.obj: CXX_COMPILER__1182_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/1182.cpp || cmake_object_order_depends_target_1182
+  DEP_FILE = CMakeFiles\1182.dir\1182.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\1182.dir
+  OBJECT_FILE_DIR = CMakeFiles\1182.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1182
+
+
+#############################################
+# Link the executable 1182.exe
+
+build 1182.exe: CXX_EXECUTABLE_LINKER__1182_Debug CMakeFiles/1182.dir/1182.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1182.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1182.exe
+  TARGET_IMPLIB = lib1182.dll.a
+  TARGET_PDB = 1182.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -527,6 +560,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
+
+build 1182: phony 1182.exe
 
 build Fence: phony Fence.exe
 
@@ -564,7 +599,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe
 
 # =============================================================================
 # Built-in targets

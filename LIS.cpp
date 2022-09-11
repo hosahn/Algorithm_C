@@ -2,38 +2,31 @@
 #include <vector>
 #include <string.h>
 using namespace std;
-int cache[5000];
 
-int solution(vector<int>& arr, int start){
-    int &ret = cache[start];
-    if(ret != -1) return ret;
-    ret = 1;
-    for(int i = start + 1; i < arr.size(); ++i){
-        if(start  == -1 || arr[start] < arr[i])
-            ret = max(ret, solution(arr, i) + 1);
-    }
-    return ret;
-}
+int cache[1001];
+int size;
+vector<int> field;
 
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    cout.tie(NULL);
-    int k;
-    cin >> k;
-    for(int z = 0; z < k; z++) {
-        int n;
-        memset(cache, -1, sizeof(cache));
-        cin >> n;
-        vector<int> arr;
-        for (int i = 0; i < n; i++) {
-            int tmp;
-            cin >> tmp;
-            arr.push_back(tmp);
+    memset(cache, 0, sizeof(cache));
+    cin >> size;
+    for(int i = 0; i < size; i++){
+        int tmp;
+        cin >> tmp;
+        field.push_back(tmp);
+    }
+    int MaxLength = 0;
+    for(int i = 1; i < size; i++){
+        cache[i] = 1;
+        for(int j = i - 1; j >= 0; j--){
+            if(field[i] > field[j])
+                cache[i] = cache[j] + 1;
         }
-        int maxLen = -1;
-        for (int i = 0; i < n; i++) {
-            maxLen = max(solution(arr, i), maxLen);
+        if(cache[i] > MaxLength) {
+            MaxLength = cache[i];
         }
     }
+    cout << MaxLength;
 }
