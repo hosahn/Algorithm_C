@@ -3,11 +3,13 @@
 using namespace std;
 
 long long solution(vector<long long>& fence, long long right, long long left){
-    if(right == left){
+    if(right == left)
         return fence[left];
-    }
     long long mid = (right + left) / 2;
     long long ret = max(solution(fence, mid, left), solution(fence, right, mid + 1));
+    //오른쪽 왼쪽 각각에서 더 큰 사각형을 ret으로
+
+    //여기부턴 겹치는 부분 탐색을 구현
     long long lo = mid, hi = mid + 1;
     long long height = min(fence[lo], fence[hi]);
     ret = max(ret, height * 2);

@@ -12,12 +12,10 @@ int solution(vector<vector<int>>& field, int size, int x, int y){
     int& ret = cache[x][y];
     if(field[x][y] == 0)
         return ret = 1;
-
     //이게
     if(ret != -1)
         return ret;
     //메모이제이션 코드 (없어도 동작하지만 완전탐색이 되어버림)
-
     int jump = field[x][y];
     return ret = solution(field, size, x + jump, y) || solution(field, size, x, y + jump);
 }

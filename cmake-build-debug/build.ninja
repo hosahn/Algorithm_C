@@ -535,6 +535,39 @@ build 1182.exe: CXX_EXECUTABLE_LINKER__1182_Debug CMakeFiles/1182.dir/1182.cpp.o
   TARGET_IMPLIB = lib1182.dll.a
   TARGET_PDB = 1182.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target PI
+
+
+#############################################
+# Order-only phony target for PI
+
+build cmake_object_order_depends_target_PI: phony || CMakeFiles/PI.dir
+
+build CMakeFiles/PI.dir/PI.cpp.obj: CXX_COMPILER__PI_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/PI.cpp || cmake_object_order_depends_target_PI
+  DEP_FILE = CMakeFiles\PI.dir\PI.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\PI.dir
+  OBJECT_FILE_DIR = CMakeFiles\PI.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PI
+
+
+#############################################
+# Link the executable PI.exe
+
+build PI.exe: CXX_EXECUTABLE_LINKER__PI_Debug CMakeFiles/PI.dir/PI.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\PI.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PI.exe
+  TARGET_IMPLIB = libPI.dll.a
+  TARGET_PDB = PI.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -573,6 +606,8 @@ build LIS: phony LIS.exe
 
 build LISFAST.cpp: phony LISFAST.cpp.exe
 
+build PI: phony PI.exe
+
 build Picnic: phony Picnic.exe
 
 build Reverse_Quad: phony Reverse_Quad.exe
@@ -599,7 +634,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe
 
 # =============================================================================
 # Built-in targets
