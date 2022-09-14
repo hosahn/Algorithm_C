@@ -568,6 +568,72 @@ build PI.exe: CXX_EXECUTABLE_LINKER__PI_Debug CMakeFiles/PI.dir/PI.cpp.obj
   TARGET_IMPLIB = libPI.dll.a
   TARGET_PDB = PI.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 1520
+
+
+#############################################
+# Order-only phony target for 1520
+
+build cmake_object_order_depends_target_1520: phony || CMakeFiles/1520.dir
+
+build CMakeFiles/1520.dir/1520.cpp.obj: CXX_COMPILER__1520_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/1520.cpp || cmake_object_order_depends_target_1520
+  DEP_FILE = CMakeFiles\1520.dir\1520.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\1520.dir
+  OBJECT_FILE_DIR = CMakeFiles\1520.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1520
+
+
+#############################################
+# Link the executable 1520.exe
+
+build 1520.exe: CXX_EXECUTABLE_LINKER__1520_Debug CMakeFiles/1520.dir/1520.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1520.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1520.exe
+  TARGET_IMPLIB = lib1520.dll.a
+  TARGET_PDB = 1520.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Quantization
+
+
+#############################################
+# Order-only phony target for Quantization
+
+build cmake_object_order_depends_target_Quantization: phony || CMakeFiles/Quantization.dir
+
+build CMakeFiles/Quantization.dir/Quantization.cpp.obj: CXX_COMPILER__Quantization_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/Quantization.cpp || cmake_object_order_depends_target_Quantization
+  DEP_FILE = CMakeFiles\Quantization.dir\Quantization.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Quantization.dir
+  OBJECT_FILE_DIR = CMakeFiles\Quantization.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Quantization
+
+
+#############################################
+# Link the executable Quantization.exe
+
+build Quantization.exe: CXX_EXECUTABLE_LINKER__Quantization_Debug CMakeFiles/Quantization.dir/Quantization.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Quantization.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Quantization.exe
+  TARGET_IMPLIB = libQuantization.dll.a
+  TARGET_PDB = Quantization.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -596,6 +662,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build 1182: phony 1182.exe
 
+build 1520: phony 1520.exe
+
 build Fence: phony Fence.exe
 
 build JLIS: phony JLIS.exe
@@ -609,6 +677,8 @@ build LISFAST.cpp: phony LISFAST.cpp.exe
 build PI: phony PI.exe
 
 build Picnic: phony Picnic.exe
+
+build Quantization: phony Quantization.exe
 
 build Reverse_Quad: phony Reverse_Quad.exe
 
@@ -634,7 +704,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe 1520.exe Quantization.exe
 
 # =============================================================================
 # Built-in targets
