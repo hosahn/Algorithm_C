@@ -602,6 +602,39 @@ build 1520.exe: CXX_EXECUTABLE_LINKER__1520_Debug CMakeFiles/1520.dir/1520.cpp.o
   TARGET_PDB = 1520.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 1793
+
+
+#############################################
+# Order-only phony target for 1793
+
+build cmake_object_order_depends_target_1793: phony || CMakeFiles/1793.dir
+
+build CMakeFiles/1793.dir/1793.cpp.obj: CXX_COMPILER__1793_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/1793.cpp || cmake_object_order_depends_target_1793
+  DEP_FILE = CMakeFiles\1793.dir\1793.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\1793.dir
+  OBJECT_FILE_DIR = CMakeFiles\1793.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1793
+
+
+#############################################
+# Link the executable 1793.exe
+
+build 1793.exe: CXX_EXECUTABLE_LINKER__1793_Debug CMakeFiles/1793.dir/1793.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1793.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1793.exe
+  TARGET_IMPLIB = lib1793.dll.a
+  TARGET_PDB = 1793.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Quantization
 
 
@@ -634,6 +667,72 @@ build Quantization.exe: CXX_EXECUTABLE_LINKER__Quantization_Debug CMakeFiles/Qua
   TARGET_IMPLIB = libQuantization.dll.a
   TARGET_PDB = Quantization.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Tiling2
+
+
+#############################################
+# Order-only phony target for Tiling2
+
+build cmake_object_order_depends_target_Tiling2: phony || CMakeFiles/Tiling2.dir
+
+build CMakeFiles/Tiling2.dir/Tiling2.cpp.obj: CXX_COMPILER__Tiling2_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/Tiling2.cpp || cmake_object_order_depends_target_Tiling2
+  DEP_FILE = CMakeFiles\Tiling2.dir\Tiling2.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Tiling2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tiling2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Tiling2
+
+
+#############################################
+# Link the executable Tiling2.exe
+
+build Tiling2.exe: CXX_EXECUTABLE_LINKER__Tiling2_Debug CMakeFiles/Tiling2.dir/Tiling2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Tiling2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Tiling2.exe
+  TARGET_IMPLIB = libTiling2.dll.a
+  TARGET_PDB = Tiling2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Tripathcnt
+
+
+#############################################
+# Order-only phony target for Tripathcnt
+
+build cmake_object_order_depends_target_Tripathcnt: phony || CMakeFiles/Tripathcnt.dir
+
+build CMakeFiles/Tripathcnt.dir/Tripathcnt.cpp.obj: CXX_COMPILER__Tripathcnt_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/Tripathcnt.cpp || cmake_object_order_depends_target_Tripathcnt
+  DEP_FILE = CMakeFiles\Tripathcnt.dir\Tripathcnt.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Tripathcnt.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tripathcnt.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Tripathcnt
+
+
+#############################################
+# Link the executable Tripathcnt.exe
+
+build Tripathcnt.exe: CXX_EXECUTABLE_LINKER__Tripathcnt_Debug CMakeFiles/Tripathcnt.dir/Tripathcnt.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Tripathcnt.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Tripathcnt.exe
+  TARGET_IMPLIB = libTripathcnt.dll.a
+  TARGET_PDB = Tripathcnt.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -664,6 +763,8 @@ build 1182: phony 1182.exe
 
 build 1520: phony 1520.exe
 
+build 1793: phony 1793.exe
+
 build Fence: phony Fence.exe
 
 build JLIS: phony JLIS.exe
@@ -682,7 +783,11 @@ build Quantization: phony Quantization.exe
 
 build Reverse_Quad: phony Reverse_Quad.exe
 
+build Tiling2: phony Tiling2.exe
+
 build Triangle: phony Triangle.exe
+
+build Tripathcnt: phony Tripathcnt.exe
 
 build WildCard: phony WildCard.exe
 
@@ -704,7 +809,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe 1520.exe Quantization.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe 1520.exe 1793.exe Quantization.exe Tiling2.exe Tripathcnt.exe
 
 # =============================================================================
 # Built-in targets
