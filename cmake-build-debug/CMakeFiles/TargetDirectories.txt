@@ -21,5 +21,7 @@
 /home/hosan/Documents/GitHub/Algorithm_C/cmake-build-debug/CMakeFiles/Tripathcnt.dir
 /home/hosan/Documents/GitHub/Algorithm_C/cmake-build-debug/CMakeFiles/test.dir
 /home/hosan/Documents/GitHub/Algorithm_C/cmake-build-debug/CMakeFiles/Snail.dir
+/home/hosan/Documents/GitHub/Algorithm_C/cmake-build-debug/CMakeFiles/AsymTiling.dir
+/home/hosan/Documents/GitHub/Algorithm_C/cmake-build-debug/CMakeFiles/Poly.dir
 /home/hosan/Documents/GitHub/Algorithm_C/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/hosan/Documents/GitHub/Algorithm_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir

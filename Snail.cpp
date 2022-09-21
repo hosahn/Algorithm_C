@@ -11,7 +11,8 @@ double solution(int days, int clime){
     return ret = (0.25 * solution(days + 1, clime + 1)) + (0.75 * solution(days + 1, clime + 2));
 }
 
-int main(void){
+int main(){
+    cout.precision(10);
     int k;
     cin >> k;
     for(int i = 0; i < k; i++){

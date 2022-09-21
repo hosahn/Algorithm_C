@@ -16,13 +16,11 @@ int solution(string target, string tmp, int a, int b, int tmpSize, int targetSiz
         return ret;
     }
     // ? 와일드카드인경우
-
     if(a == targetSize){
         ret = (b == tmpSize);
         return ret;
     }
     // a끝에 도달한경우
-
     if(target[a] == '*'){
         if((b < tmpSize && solution(target, tmp, a, b+1, tmpSize, targetSize)) || (a < targetSize && (solution(target, tmp, a+1, b, tmpSize, targetSize)))){
             //b+1 = a는 계속 *로 머물고 b의 다음칸 대응 검사, a+1 = 이제 * 스킵하고 a의 다음 문자열 검사(사이즈 체크 필요)
