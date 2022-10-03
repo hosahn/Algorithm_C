@@ -19,6 +19,5 @@ C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/1793.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Quantization.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Tiling2.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/Tripathcnt.dir
-C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/COUNTLIS.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
