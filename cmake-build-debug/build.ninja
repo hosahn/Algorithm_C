@@ -733,6 +733,39 @@ build Tripathcnt.exe: CXX_EXECUTABLE_LINKER__Tripathcnt_Debug CMakeFiles/Tripath
   TARGET_IMPLIB = libTripathcnt.dll.a
   TARGET_PDB = Tripathcnt.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target COUNTLIS
+
+
+#############################################
+# Order-only phony target for COUNTLIS
+
+build cmake_object_order_depends_target_COUNTLIS: phony || CMakeFiles/COUNTLIS.dir
+
+build CMakeFiles/COUNTLIS.dir/COUNTLIS.cpp.obj: CXX_COMPILER__COUNTLIS_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/COUNTLIS.cpp || cmake_object_order_depends_target_COUNTLIS
+  DEP_FILE = CMakeFiles\COUNTLIS.dir\COUNTLIS.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\COUNTLIS.dir
+  OBJECT_FILE_DIR = CMakeFiles\COUNTLIS.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target COUNTLIS
+
+
+#############################################
+# Link the executable COUNTLIS.exe
+
+build COUNTLIS.exe: CXX_EXECUTABLE_LINKER__COUNTLIS_Debug CMakeFiles/COUNTLIS.dir/COUNTLIS.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\COUNTLIS.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = COUNTLIS.exe
+  TARGET_IMPLIB = libCOUNTLIS.dll.a
+  TARGET_PDB = COUNTLIS.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -764,6 +797,8 @@ build 1182: phony 1182.exe
 build 1520: phony 1520.exe
 
 build 1793: phony 1793.exe
+
+build COUNTLIS: phony COUNTLIS.exe
 
 build Fence: phony Fence.exe
 
@@ -809,7 +844,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe 1520.exe 1793.exe Quantization.exe Tiling2.exe Tripathcnt.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe 1520.exe 1793.exe Quantization.exe Tiling2.exe Tripathcnt.exe COUNTLIS.exe
 
 # =============================================================================
 # Built-in targets
