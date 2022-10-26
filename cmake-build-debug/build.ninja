@@ -766,6 +766,39 @@ build COUNTLIS.exe: CXX_EXECUTABLE_LINKER__COUNTLIS_Debug CMakeFiles/COUNTLIS.di
   TARGET_IMPLIB = libCOUNTLIS.dll.a
   TARGET_PDB = COUNTLIS.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 1729
+
+
+#############################################
+# Order-only phony target for 1729
+
+build cmake_object_order_depends_target_1729: phony || CMakeFiles/1729.dir
+
+build CMakeFiles/1729.dir/1729.cpp.obj: CXX_COMPILER__1729_Debug C$:/Users/hosah/CLionProjects/Algorithm_C/1729.cpp || cmake_object_order_depends_target_1729
+  DEP_FILE = CMakeFiles\1729.dir\1729.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\1729.dir
+  OBJECT_FILE_DIR = CMakeFiles\1729.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1729
+
+
+#############################################
+# Link the executable 1729.exe
+
+build 1729.exe: CXX_EXECUTABLE_LINKER__1729_Debug CMakeFiles/1729.dir/1729.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1729.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1729.exe
+  TARGET_IMPLIB = lib1729.dll.a
+  TARGET_PDB = 1729.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -795,6 +828,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 build 1182: phony 1182.exe
 
 build 1520: phony 1520.exe
+
+build 1729: phony 1729.exe
 
 build 1793: phony 1793.exe
 
@@ -844,7 +879,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/hosah/CLionProjects/Algorithm_C/cmake-build-debug
 
-build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe 1520.exe 1793.exe Quantization.exe Tiling2.exe Tripathcnt.exe COUNTLIS.exe
+build all: phony main.exe boggleGame.exe Picnic.exe gameBoard.exe clockSync.exe Reverse_Quad.exe Fence.exe binomial.exe JumpGame.exe WildCard.exe LIS.exe LISFAST.cpp.exe Triangle.exe JLIS.exe 1182.exe PI.exe 1520.exe 1793.exe Quantization.exe Tiling2.exe Tripathcnt.exe COUNTLIS.exe 1729.exe
 
 # =============================================================================
 # Built-in targets
